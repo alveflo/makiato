@@ -9,6 +9,7 @@ init :
 
 build :
 	coffee -o lib/ -c src/
+	coffee -o __test__/ -c test/
 
 docs :
 	docco src/*.coffee

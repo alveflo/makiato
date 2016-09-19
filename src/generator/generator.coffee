@@ -27,7 +27,7 @@ gen = (template, dir, extension, out) ->
   spider = require "./spider.js"
   dateformat = require "dateformat"
   files = []
-  for file in spider.scan(dir, extension)
+  for file in spider.scan dir, extension
     title = file.filename.replace extension, ""
     title = title.replace\
       (file.filename.charAt(0)
@@ -42,4 +42,4 @@ gen = (template, dir, extension, out) ->
       title: title
     render template, file, out
 
-gen("template.pug","test", ".md", "output")
+gen "template.pug","test", ".md", "output"

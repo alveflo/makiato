@@ -7,7 +7,7 @@
     "makiato": "./lib/index.js"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   },
   "repository": {
     "type": "git",
@@ -21,7 +21,8 @@
   "homepage": "https://github.com/makiatojs/makiato#readme",
   "devDependencies": {
     "coffee-script": "^1.10.0",
-    "docco": "^0.7.0"
+    "docco": "^0.7.0",
+    "jest": "^15.1.1"
   },
   "dependencies": {
     "commander": "^2.9.0",
